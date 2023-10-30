@@ -1,3 +1,6 @@
+:root {
+    --all-text: #ffffff;
+}
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,7 +13,7 @@ body {
 .header {
     padding: 20px;
     background-color: #4FD8D9;
-    color: #ffffff;
+    color: var(--all-text);
 }
 .header h1 {
     display: inline-block;
@@ -36,7 +39,7 @@ body {
     margin-left: 25px;
 }
 a {
-    color: #b44d4d;
+    color: var(--all-text);
     text-decoration: none;
 }
 
@@ -55,7 +58,7 @@ p {
 }
 
 .sections h3 {
-    color: blue;
+    color: var(--all-text);
     font-size: 25px;
     flex: 1 5%;
     padding-right: 3%;
@@ -80,13 +83,13 @@ p {
 .contact-info a {
     text-decoration: none;
     margin: 0 50px;
-    color:rgb(47, 170, 30);
+    color: var(--all-text);
     font-weight: bold;
     
 }
 
 .contact-info ul li {
-    color:rgb(47, 170, 30);
+    color: var(--all-text);
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
@@ -94,3 +97,39 @@ p {
     margin: 0 50px;
     
 }
+@media screen and (max-widht: 980px) {
+    header {
+        justify-content: center;
+        position: relative;
+       
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-widht: 768px) {
+    .sections h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-widht: 500px){
+    .sections h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    
+}
+
