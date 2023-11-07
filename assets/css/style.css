@@ -1,24 +1,30 @@
+/* set a global CSS variable for color */
 :root {
     --all-text: #ffffff;
 }
+/*Apply styles to all elements*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+/* Styles the body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #d9dcd6;
 }
+/* Styles the header*/
 .header {
     padding: 20px;
     background-color: #4FD8D9;
     color: var(--all-text);
 }
+/* Styles the h1 header*/
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
+/* Styles the div header*/
 .header div {
     padding-top: 15px;
     margin-right: 20px;
@@ -26,27 +32,32 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
+/* Styles class "pic-of-me*/
 .Pic-of-me {
     display: block;
     max-width: 25%;
     height: auto;
 }
+/* Styles all the unlisted elements*/
 .header div ul {
     list-style-type: none;
 }
+/* Styles styles all the li*/
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
+/* Styles the links*/
 a {
     color: var(--all-text);
     text-decoration: none;
 }
-
+/* Styles the paragraph*/
 p {
     font-size: 20px;
     padding-left: 1%;
 }
+/* Styles all the sections*/
 .sections {
     margin: 50px auto;
     padding-bottom: 10px;
@@ -56,13 +67,14 @@ p {
     align-items: center;
     justify-content: space-between;
 }
-
+/* Styles the h3 of the sections*/
 .sections h3 {
     color: var(--all-text);
     font-size: 25px;
-    flex: 1 5%;
-    padding-right: 3%;
+    flex: 1 2%;
+    padding-right: 2%;
 }
+/* Styles the text within section*/
 
 .texts {
     flex: 20;
@@ -70,7 +82,7 @@ p {
     text-align: left;
     padding-left: 1%;
     }
-
+/* Styles the class contact-info*/
 .contact-info{
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +91,7 @@ p {
     font-size: 15px;
      width: 100%;
     }
-
+/* Styles the links of contact info*/
 .contact-info a {
     text-decoration: none;
     margin: 0 50px;
@@ -87,7 +99,7 @@ p {
     font-weight: bold;
     
 }
-
+/* Styles the li of contact info*/
 .contact-info ul li {
     color: var(--all-text);
     text-decoration: none;
@@ -95,8 +107,29 @@ p {
     display: inline-block;
     font-size: 20px;
     margin: 0 50px;
+
+
     
 }
+/* Position the image on top of all the images*/
+.larger-image-container {
+    position: relative;
+    z-index: 2;
+
+}
+/* makes the image larger than the other*/
+.large-project-image {
+    max-width: 75%;
+    height: auto;
+    margin: 20px;
+    }
+/* Makes all the other images the same size*/
+.same-size a img {
+    max-width: 25%;
+    height: auto;
+    margin: 20px;
+    }
+/* Responsive design for screens with a max width of 980px*/
 @media screen and (max-widht: 980px) {
     header {
         justify-content: center;
@@ -117,14 +150,14 @@ p {
     }
 }
 
-
+/* Responsive design for screens with a max width of 768px*/
 @media screen and (max-widht: 768px) {
     .sections h3 {
         flex: 1 100%;
         text-align: center;
     }
 }
-
+/* Responsive design for screens with a max width of 500px*/
 @media screen and (max-widht: 500px){
     .sections h3 {
         flex: 1 100%;
@@ -132,4 +165,3 @@ p {
     }
     
 }
-
