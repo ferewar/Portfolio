@@ -15,3 +15,6 @@ MIT license
 
 # Screenshots
 ![image](https://github.com/ferewar/Portfolio/assets/73423237/bae66412-f7d7-4a8f-9373-915e32af0297)
+
+# Link to the deployed application
+https://ferewar.github.io/Portfolio/
